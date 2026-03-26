@@ -13,34 +13,22 @@ Antes del modelado, realicé un proceso de **ETL** para asegurar la calidad de l
 * **Normalización:** Limpié y estandaricé las categorías de `Industry` y `Business Type`, eliminando duplicados y valores nulos para evitar errores en el filtrado.
 
 ### 2️⃣ Modelado de Datos (Power BI)
-Implementé una arquitectura de **Modelo en Estrella (Star Schema)** para garantizar escalabilidad y rendimiento:
-* **Tablas de Dimensiones:** `Dim_Industria` y `Dim_Tipo_Negocio`.
+Implementé una arquitectura de **Modelo en Estrella** para garantizar escalabilidad y rendimiento:
+* **Tablas de Dimensiones:** `Dim_Industria1` y `Dim_Tipo_Negocio2`.
 * **Tabla de Hechos:** `Tabla_Principal` con métricas de ingresos, gastos y beneficios.
 * **Relaciones:** Conexiones de uno a muchos (1:*) para un filtrado preciso entre dimensiones y hechos.
 
 ### 3️⃣ Análisis con DAX y Visualización
 * **Cálculo de Eficiencia:** Creé la medida DAX `% de Margen de Beneficio` para identificar qué sectores son más rentables operativamente.
-* **KPIs Dinámicos:** Tarjetas con **Formato Condicional** (Verde/Rojo) basadas en el cumplimiento de márgenes de beneficio.
-* **Análisis de Tendencia:** Comparativa visual entre el beneficio neto actual y la proyección futura.
+* **Consistencia Visual:** Apliqué formatos de moneda unificados ($) y etiquetas de unidades en millones para facilitar la lectura rápida de grandes volúmenes de capital.
+* **Análisis de Tendencia:** Diseñé un gráfico comparativo de barras para contrastar el **Beneficio Actual** frente a la **Proyección de Crecimiento (6 meses)**, permitiendo identificar sectores con mayor potencial de escalabilidad
 
 ---
 
-## 📂 Estructura del Repositorio
-* **`/Data/Raw`**: Dataset original con los datos brutos del planner.
-* **`/Data/Processed`**: Dataset auditado y normalizado en Excel (fuente de datos final).
-* **`/Reports`**: Archivo `.pbix` con el dashboard interactivo de Power BI.
-
----
 
 ## 💡 Hallazgos Clave (Insights)
 * **Liderazgo Sectorial:** La industria de **Construction** domina el volumen de ingresos totales y presenta la proyección de crecimiento más prometedora.
 * **Rentabilidad vs. Volumen:** Se identificaron sectores que, aunque facturan menos, poseen un margen de beneficio superior, lo que representa una mayor eficiencia en el uso de recursos.
 
 ---
-
-## ⚙️ Nota Técnica
-Para visualizar correctamente el reporte, es necesario actualizar la ruta del origen de datos en Power BI (`Transformar Datos > Configuración de origen de datos`) apuntando al archivo Excel ubicado en la carpeta `/Data/Processed`.
-
----
-**Autor:** Sebastian  
-**Rol:** Junior Data Analyst
+**Desarrollado por Sebastian Mayorga - Junior Data Analyst**
