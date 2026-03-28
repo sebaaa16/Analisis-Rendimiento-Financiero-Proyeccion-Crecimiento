@@ -5,6 +5,20 @@ Este proyecto presenta un dashboard interactivo desarrollado en **Power BI**, ba
 
 ---
 
+## 📂 Recursos del Proyecto
+* **Dataset Utilizado:** https://github.com/sebaaa16/Analisis-ventas-rentabilidad-superstore/blob/main/Sample%20-%20Superstore.csv
+* **Herramientas:** Power BI Desktop / Power Query.
+* **Técnicas:** Limpieza de delimitadores, tipado de datos y cálculos con medidas DAX.
+
+---
+
+## 🖼️ Dashboard Final
+Aca podes ver el resultado de la visualización:
+
+https://github.com/sebaaa16/Analisis-ventas-rentabilidad-superstore/blob/main/Dashboard.PNG
+
+---
+
 ## 🛠️ Metodología y Herramientas
 
 ### 1️⃣ Limpieza y Auditoría de Datos (Excel)
